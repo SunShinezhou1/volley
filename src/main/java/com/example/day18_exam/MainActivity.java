@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        //调用队
+        //调用队列
+        //add line
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         //执行图片请求 地址 请求成功 压缩大的大小 图片类型 请求失败监听事件
         ImageRequest imageRequest = new ImageRequest("http://img.pcauto.com.cn/images/pcautogallery/modle/article/201712/22/15139408830118180_660.jpg", new Response.Listener<Bitmap>() {
